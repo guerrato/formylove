@@ -1,0 +1,123 @@
+html,
+body {
+    background-color: rgb(202, 103, 169);
+}
+
+body {
+    padding: 90px;
+}
+
+@keyframes change-text {
+    0% {
+        color: black;
+        content: "I miss her...";
+    }
+
+    16.6667% {
+        color: white;
+    }
+
+    33.3334% {
+        color: black;
+        content: "How to prove her?";
+    }
+
+    50.0001% {
+        color: white;
+    }
+
+
+    66.6667% {
+        color: black;
+        content: "It's working!";
+    }
+
+    100% {
+        color: white;
+    }
+}
+
+@-webkit-keyframes change-text {
+    0% {
+        color: black;
+        content: "I miss her...";
+    }
+
+    16.6667% {
+        color: white;
+    }
+
+    33.3334% {
+        color: black;
+        content: "How to prove her?";
+    }
+
+    50.0001% {
+        color: white;
+    }
+
+
+    66.6667% {
+        color: black;
+        content: "It's working!";
+    }
+
+    100% {
+        color: white;
+    }
+  }
+
+#think.thought {
+    position: relative;
+    width: 200px;
+    height: 127px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#think>span {
+    visibility: hidden;
+    position: relative;
+}
+
+#think>span:after {
+    visibility: visible;
+    position: absolute;
+    top: 52px;
+    left: -91px;
+    width: 184px;
+    line-height: 25px;
+    content: "";
+    animation: change-text 12s linear infinite;
+}
+
+#think.thought:before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 99px;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#think.thought:after {
+    content: "";
+    position: absolute;
+    left: -56px;
+    top: 129px;
+    width: 29px;
+    height: 29px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+}
