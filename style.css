@@ -2505,7 +2505,7 @@ body {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 416px) {
   #think.thought {
     top: -167px;
     font-family: 'Comic Neue', cursive;
